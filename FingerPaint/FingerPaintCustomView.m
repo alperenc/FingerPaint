@@ -20,27 +20,14 @@
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     
-    NSArray *points = [self.delegate points];
-    
-    UIBezierPath* drawing = [UIBezierPath new];
-    
-    BOOL isFirst = YES;
-    for (NSValue *point in points) {
-        if (isFirst) {
-        // happens once
-            [drawing moveToPoint:[point CGPointValue]];
-            isFirst = NO;
-        } else {
-        // happens many times
-            [drawing addLineToPoint:[point CGPointValue]];
-            
-        }
-    }
+    UIBezierPath* drawing = [self.delegate path];
     
     [drawing setLineWidth:5.0];
+    
     [[UIColor blueColor] setStroke];
     
     [drawing stroke];
+    
  
 }
 

@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (strong, nonatomic) NSMutableArray *points;
+@property (strong, nonatomic) UIBezierPath *path;
 @property (weak, nonatomic) IBOutlet FingerPaintCustomView *fingerPaintView;
 
 @end
@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.points = [NSMutableArray array];
+    self.path = [UIBezierPath bezierPath];
     self.fingerPaintView.delegate = self;
 }
 
@@ -28,14 +28,17 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint touchLocation = [touch locationInView:self.fingerPaintView];
     
+    [self.path moveToPoint:touchLocation];
 }
 
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     CGPoint touchLocation = [touch locationInView:self.fingerPaintView];
     
-    [self.points addObject:[NSValue valueWithCGPoint:touchLocation]];
+    [self.path addLineToPoint:touchLocation];
     
 //    NSLog(@"Touching to the screen");
     

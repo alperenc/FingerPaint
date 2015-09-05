@@ -10,7 +10,7 @@
 
 @protocol FingerPaintCustomViewDelegate <NSObject>
 
--(NSArray *)points;
+- (UIBezierPath *) path;
 
 @end
 
