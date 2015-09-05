@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FingerPaintCustomView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <FingerPaintCustomViewDelegate>
 
 
 @end

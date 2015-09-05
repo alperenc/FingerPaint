@@ -13,6 +13,7 @@
 		C723D2771B9A4AAF00B394EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C723D2751B9A4AAF00B394EB /* Main.storyboard */; };
 		C723D2791B9A4AAF00B394EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C723D2781B9A4AAF00B394EB /* Assets.xcassets */; };
 		C723D27C1B9A4AAF00B394EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C723D27A1B9A4AAF00B394EB /* LaunchScreen.storyboard */; };
+		C723D2851B9A503000B394EB /* FingerPaintCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = C723D2841B9A503000B394EB /* FingerPaintCustomView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C723D2781B9A4AAF00B394EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C723D27B1B9A4AAF00B394EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C723D27D1B9A4AAF00B394EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C723D2831B9A503000B394EB /* FingerPaintCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingerPaintCustomView.h; sourceTree = "<group>"; };
+		C723D2841B9A503000B394EB /* FingerPaintCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FingerPaintCustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				C723D2701B9A4AAF00B394EB /* AppDelegate.m */,
 				C723D2721B9A4AAF00B394EB /* ViewController.h */,
 				C723D2731B9A4AAF00B394EB /* ViewController.m */,
+				C723D2831B9A503000B394EB /* FingerPaintCustomView.h */,
+				C723D2841B9A503000B394EB /* FingerPaintCustomView.m */,
 				C723D2751B9A4AAF00B394EB /* Main.storyboard */,
 				C723D2781B9A4AAF00B394EB /* Assets.xcassets */,
 				C723D27A1B9A4AAF00B394EB /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				C723D2741B9A4AAF00B394EB /* ViewController.m in Sources */,
 				C723D2711B9A4AAF00B394EB /* AppDelegate.m in Sources */,
 				C723D26E1B9A4AAF00B394EB /* main.m in Sources */,
+				C723D2851B9A503000B394EB /* FingerPaintCustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
